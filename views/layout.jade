@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet" href="/main.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+        title Untitled
+
+    body
+        header.main-header
+            div.main-nav.container
+                ul.nav-list 
+                    li 
+                        a(href="/") Home
+                    li
+                        a(href="/submitvideo") Submit a Video
+                    li
+                        a(href="/submissions") View Submissions
+                    li
+                        a(href="/winner") Winner
+        div.container
+            block content

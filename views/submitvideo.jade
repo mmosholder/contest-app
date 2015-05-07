@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h2 Submit your Video
+
+    form(action="/submitVideo" method="post")
+        div.form-group
+            input.form-control(type="text" name="name" placeholder="Name")
+        div.form-group
+            input.form-control(type="url" name="url" placeholder="Video URL")
+        div.form-group
+            input.form-control(type="text" name="title" placeholder="Video Title")
+        div.form-group
+            input.form-control(type="text" name="description" placeholder="Video Decription")
+        input(type="submit")

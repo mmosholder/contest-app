@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    div.submissions-container
+    h2 Submissions
+
+    for pair in pairs
+        ul.submission-list
+            for submission in pair 
+                li.col-sm-6
+                    <iframe width="560" height="315" src="#{submission.videoUrl}" frameborder="0" allowfullscreen></iframe>

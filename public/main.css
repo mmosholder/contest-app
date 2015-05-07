@@ -1,0 +1,21 @@
+.main-header {
+    height: 50px;
+    border-bottom: 3px solid #333;
+}
+.main-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+.main-nav ul li {
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0;
+}
+.submissions-container {
+    margin: 30px 0;
+}
+.submission-list {
+    list-style: none;
+    padding-left: 0;
+}
