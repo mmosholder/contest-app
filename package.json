@@ -3,5 +3,9 @@
 		"express": "^4",
 		"jade": "^1",
 		"body-parser": "^1"
-	}
+	},
+    // telling heroku to start the app by running app.js
+    "scripts": {
+        "start": "node app.js"
+    }
 }

@@ -20,6 +20,8 @@ app.get('/submissions', indexController.submissionsPage);
 // management controller from the apiController
 app.post('/submitVideo', apiController.addSubmission);
 
-var server = app.listen(8464, function() {
+// set heroku port - first arg is for heroku, if that does not exist, port is local port
+var port = process.env.PORT || 8464;
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
