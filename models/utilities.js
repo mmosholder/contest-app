@@ -7,7 +7,16 @@ var utilities = {
                 results.push(tempArr);
              }
         return results;
+    },
+    // determining vote # by clicks of vote button
+    votes: function (name, arr) {
+        for(var i=0; i < arr.length; i++) {
+            if(arr[i].name === name) {
+                arr[i].votes++;
+            }
+        }
     }
 };
+
 
 module.exports = utilities;

@@ -1,3 +1,6 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 .main-header {
     height: 50px;
     border-bottom: 3px solid #333;
@@ -15,7 +18,27 @@
 .submissions-container {
     margin: 30px 0;
 }
-.submission-list {
-    list-style: none;
-    padding-left: 0;
+.submissions-row {
+    margin: 45px 0;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: center;
+}
+.voting-row {
+    padding: 5px 0;
+    position: relative;
+}
+.voting-row a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background-color: rgba(111, 27, 229, .9);
+    padding: 6px 30px;
+    border-radius: 0;
+}
+.voting-row a:hover {
+    color: #fff;
+    background-color: rgba(111, 27, 229, 1);
 }

@@ -8,15 +8,16 @@ var convertUrl = function(videoUrl) {
 
 
 // base class for all submissions
-var VideoSubmission = function (name, videoUrl, title, description) {
+var VideoSubmission = function (name, videoUrl, title, description, votes) {
     this.name = name; 
     this.videoUrl = convertUrl(videoUrl);
     this.title = title;
     this.description = description;
+    this.votes = 0;
 };
 
 // Helper for adding new submission to submission list
-var addSubmission = function (name, videoUrl, title, description) {
+var addSubmission = function (name, videoUrl, title, description, votes) {
     var newSubmission = new VideoSubmission (name, videoUrl, title, description);
     
     if (submissions.length <= 7) {

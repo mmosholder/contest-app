@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.get('/', indexController.index);
 app.get('/submitvideo', indexController.submitPage);
 app.get('/submissions', indexController.submissionsPage);
+app.get('/vote/:name', apiController.addVote);
 
 // management controller from the apiController
 app.post('/submitVideo', apiController.addSubmission);

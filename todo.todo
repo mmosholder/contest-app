@@ -1,0 +1,2 @@
+ ☐ Set up vote system: a tag in jade file has href of '/vote', for the get for /vote, executes a counter that looks at the title for the element that was clicked and applies a vote to it
+ ☐ when '/vote' is 'invoked', find vote property of submission and apply vote

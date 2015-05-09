@@ -5,7 +5,10 @@ block content
     h2 Submissions
 
     for pair in pairs
-        ul.submission-list
+        div.row.submissions-row
             for submission in pair 
-                li.col-sm-6
-                    <iframe width="560" height="315" src="#{submission.videoUrl}" frameborder="0" allowfullscreen></iframe>
+                div.col-sm-6
+                    h4 #{submission.name} has #{submission.votes} votes
+                    <iframe width="500" height="300" src="#{submission.videoUrl}" frameborder="0" allowfullscreen></iframe>
+                    div.voting-row
+                        a.btn(href="/vote/#{submission.name}" name="vote") Vote
